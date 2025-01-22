@@ -1,0 +1,133 @@
+/* Styles généraux */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Styles pour le header et la navigation */
+header {
+    background-color: #6aaaff;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 35px;
+}
+
+nav ul li img {
+    width: 85px;
+    height: auto;
+}
+
+nav ul li a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size:x-large;
+    font-weight: bold;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: purple;
+    transition: width 0.4s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espace entre les cartes */
+    margin-top: 20px;
+    flex-wrap: wrap; /* Pour s'adapter aux petits écrans */
+}
+
+.center-text {
+    font-size: 3rem; /* Texte plus grand */
+    color: #333; /* Couleur plus contrastée */
+    line-height: 1.5; /* Meilleur espacement des lignes */
+}
+
+
+/* Footer */
+footer {
+    background-color: #817ffd;
+    text-align: center;
+    border-top: 3px solid #ccc;
+    margin-top: 20px;
+    padding-top: 10px;
+    position: absolute; bottom: 0; left: 0; right: 0}
+
+
+
+
+
+
+.card {
+    width: 300px;
+    padding: 60px;
+    text-align: center;
+    background-color: #6050dc25;
+    border: 3px solid #6600ff;
+    border-radius: 10px;
+    box-shadow: -20px 20px 8px rgba(25, 86, 255, 0.151);
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.card p {
+    font-size: 1em;
+    color: #666;
+}
+
+.card button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #6a1b9a; /* Violet similaire à ton thème */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.card button:hover {
+    background-color: #501382; /* Violet plus foncé */
+    transition: background-color 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Agrandir la carte de 5% */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3); /* Ombre plus grande pendant le survol */
+}
