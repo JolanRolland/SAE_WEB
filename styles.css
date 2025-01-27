@@ -65,10 +65,15 @@ main {
     text-align: center;
     background-color: aliceblue;
     margin: 30px;
-    padding: 60px;
+    padding: 40px;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3); /* Ombre plus grande pendant le survol */
 
 }
+
+nav img:last-of-type {
+      float: right;
+}
+
 
 .container {
     display: flex;
@@ -84,7 +89,12 @@ main {
     line-height: 1.5; 
 }
 
-
+.introduction {
+    padding-right: 300px;
+    padding-left: 300px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
 /* Footer */
 footer {
     background-color: #817ffd;
@@ -92,8 +102,7 @@ footer {
     border-top: 3px solid #ccc;
     margin-top: 20px;
     padding-top: 10px;
-    position: absolute; bottom: 0; left: 0; right: 0}
-
+}
 
 
 
