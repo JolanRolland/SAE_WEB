@@ -90,8 +90,8 @@ nav img:last-of-type {
 }
 
 .introduction {
-    padding-right: 300px;
-    padding-left: 300px;
+    padding-right: 10vw;
+    padding-left: 10vw;
     margin-top: 20px;
     margin-bottom: 50px;
 }
@@ -116,6 +116,7 @@ footer {
     border: 3px solid #6600ff;
     border-radius: 10px;
     box-shadow: -20px 20px 8px rgba(25, 86, 255, 0.151);
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
 .card h2 {
